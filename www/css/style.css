@@ -1,2 +1,26 @@
-/**/
+.profile-pic {
+    width: 210px;
+    background-color: #fff;
+    margin: 5px auto 10px;
+    border: 1px solid #999;
+    border-radius: 4px;  
+    position: relative;
+}
 
+.profile-pic > img {
+    display: block;
+    position: block;
+    max-width: 100%;
+}
+
+#school-image {
+    border: 1px solid #999;
+    border-radius:25px;
+    width: 50px;
+    opacity: 1;
+    display: inline;
+}
+
+#fbla-logo {
+    opacity: 0.5; 
+}
