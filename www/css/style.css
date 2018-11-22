@@ -8,8 +8,7 @@
 }
 
 .profile-pic > img {
-    display: block;
-    position: block;
+    position: absolute;
     max-width: 100%;
 }
 
@@ -19,8 +18,17 @@
     width: 50px;
     opacity: 1;
     display: inline;
+    margin-top: 60px;
+    margin-left: 5px;
+    z-index: 3;
 }
 
 #fbla-logo {
-    opacity: 0.5; 
+    opacity: 0.5;
+    z-index: 2;
+}
+
+#school-name {
+    margin-top: 110px;
+    text-align: center;
 }
