@@ -12,6 +12,41 @@
     max-width: 100%;
 }
 
+ons-progress-circular {
+    position: absolute;
+    top: 47%;
+    left: 47%;
+}
+
+p {
+    margin: 5px 10px 5px 10px;
+    font-size: 18px;
+    background-color: #ffffff;
+    padding: 5px 10px 5px 10px;
+}
+
+.welcome-pic {
+    width: 96%;
+    background-color: #fff;
+    margin: 5px auto 10px;
+    border: 1px solid #999;
+    border-radius: 4px;  
+    position: relative;
+}
+
+.welcome-pic > img {
+    position: absolute;
+    max-width: 100%;
+}
+
+#school-welcome {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* profile pic stuff */
+
 #school-image {
     border: 1px solid #999;
     border-radius:25px;

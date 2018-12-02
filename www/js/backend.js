@@ -1,20 +1,35 @@
 function funcBackend(page){
     app.content.get(page)
         .then(data => organizeData(data, page))
-        .catch(error => console.error("ERROR", error))
+        .catch(error => toast("An error has occured loading the page" + error))
 };
 
 function organizeData(data, page){
+    $("#loading-" + page).remove();
     console.log(data);
     var keys = Object.keys(data);
     for (var i in keys) {
+        if (keys[i] == "header"){
+            insertHeadImage(data[keys[i]], page)
+        }
         if (keys[i].startsWith("field_")){
             writeData(data[keys[i]], page);
-        } else if (keys[i].startsWith("card")){
+        }
+    }
+    for (var i in keys) {
+        if (keys[i].startsWith("card")){
             organizeCardData(data, page);
             break;
         }
     }
+}
+
+
+function insertHeadImage(data, page){
+    app.storage.getURL(data)
+        .then(url => $("#head-"+page).append(
+            "<img src=\""+url+"\" style=\"width:100%; height:99%\"></img>"))
+        .catch(error => console.error('Error with file', error));
 }
 
 function organizeCardData(data, page){

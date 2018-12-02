@@ -12,8 +12,8 @@
   <script src="https://cdn.jsdelivr.net/npm/flamelink/dist/flamelink.js"></script>
 
   <script src="js/config.js"></script>
-  <script src="js/backend.js"></script>
   <script src="js/bugReport.js"></script>
+  <script src="js/backend.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
@@ -47,7 +47,8 @@
   <ons-splitter>
     <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
       <ons-page>
-          <div class="profile-pic" onclick="fn.load('account.html')">
+          <!-- <div class="profile-pic" onclick="fn.load('account.html')"> -->  
+          <div class="profile-pic">
             <img id= "fbla-logo" src="images/FBLA-PBL_registered.png">
             <img id="school-image" src="images/nhs.png">
             <h5 id="school-name">
@@ -77,7 +78,7 @@
               Help
             </ons-list-item>
             <ons-list-item onclick="bugReport()" tappable>
-              Bug Report
+              Questions?
             </ons-list-item>
         </ons-list>
 

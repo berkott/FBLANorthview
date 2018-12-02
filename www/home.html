@@ -9,7 +9,30 @@
         Home
     </div>
     </ons-toolbar>
-    <div id="content-home">
+    <div class="welcome-pic" onclick="fn.load('account.html')">
+        <img id= "fbla-logo" src="images/FBLA-PBL_registered.png">
+        <h5 id="school-welcome">
+            <b>
+                Welcome to 
+                <br/>
+                Northview FBLA
+            </b>
+        </h5>
+    </div>
+    
+    <!-- <div id="head-home">
         
+    </div> -->
+    
+    <h6>
+        Created By: Berkan Ottlik and Neel Sandell
+    </h6>
+    
+    <h5>
+        Meeting Calendar:
+    </h5>
+    
+    <div id="content-home">
+        <ons-progress-circular indeterminate id="loading-home"></ons-progress-circular>
     </div>
 </ons-page>

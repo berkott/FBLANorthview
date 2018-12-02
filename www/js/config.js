@@ -6,3 +6,11 @@ const app = flamelink({
     storageBucket: "fblanorthview-ea1b9.appspot.com",
     messagingSenderId: "876022659546",
 });
+
+
+function toast(upload){
+    console.log("TOAST: " + upload);
+    ons.notification.toast(upload, {
+        timeout: 2000
+    });
+}
